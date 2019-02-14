@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Horror Beatdown </title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+  <script src="js/app.js"></script>
+</head>
+<header>
+  <h1>Horror Beatdown</h1>
+</header>
+<body>
+  <div class = "inlinediv">
+    <form id="new_card">
+      <div>
+        <label for="character_name" >Character Name: </label>
+        <input type="text" id="character_name" maxlength="15" required/>
+      </div>
+      <div>
+        <label for="movie" >Movie: </label>
+        <input type="text" id="movie" maxlength="15" required/>
+      </div>
+      <div>
+        <label for="image" >Image URL: </label>
+        <input type="text" id="image"/>
+      </div>
+      <div>
+        <label for="description" >Tagline: </label>
+        <input type="text" id="description" maxlength="40" required/>
+      </div>
+      <div>
+        <label for="strength" >Strength: </label>
+        <input type="number" id="strength" value ="0" step="1" min="0" max="100" required/>
+      </div>
+      <div>
+        <label for="scariness_rating" >Scariness Rating: </label>
+        <input type="number" id="scariness_rating" value ="0" step="1" min="0" max="10" required/>
+      </div>
+      <div>
+        <label for="supernatural_rating" >Supernatural Rating: </label>
+        <input type="number" id="supernatural_rating" value ="0" step="1" min="0" max="5" required/>
+      </div>
+      <div>
+        <label for="psychological_damage_rating" >Psychological Impact Rating: </label>
+        <input type="number" id="psychological_damage_rating" value ="0" step="1" min="0" max="10" required/>
+      </div>
+      <div>
+        <input class="card_button" type="submit" value="Create Card"/>
+      </div>
+    </form>
+  </div>
+
+  <div id="card_list">
+  </div>
+</body>
+</html>
