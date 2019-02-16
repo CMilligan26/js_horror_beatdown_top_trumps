@@ -64,9 +64,16 @@ form input {
 }
 
 .card_button {
-  background: black;
+  background-color: black;
   color: white;
   padding:1%;
+  transition: 1s;
+}
+
+.card_button:hover {
+  color: red;
+  border-color: black;
+  background-color: white;
 }
 
 /* Example of full width flex container below: */
@@ -187,6 +194,13 @@ form input {
   font-size: 2em;
   background: none;
   color: red;
+  transition: 1s;
+}
+
+.start_button:hover {
+  border-color: white;
+  background-color: red;
+  color: white;
 }
 
 .vs {

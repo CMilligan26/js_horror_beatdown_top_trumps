@@ -92,7 +92,8 @@ hideCards = function () {
     for (const card of cards) {
       card.hidden = true;
     }
-    displayRandomCardOne();}
+    displayRandomCardOne();
+  }
     else {fullBattle();}
   }
 
