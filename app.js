@@ -85,8 +85,7 @@ displayStartGameButton = function () {
 }
 
 hideCards = function () {
-  const button = document.querySelector(`header`).querySelector(`button`)
-  button.hidden = true;
+hideOrShowButtons(true);
   if (gameOn === false) {
     const cards = document.querySelectorAll('section');
     for (const card of cards) {
@@ -95,6 +94,15 @@ hideCards = function () {
     displayRandomCardOne();
   }
     else {fullBattle();}
+  }
+
+  hideOrShowButtons = function (showOrHide) {
+    const buttons = [];
+    buttons.push(document.querySelector('.start_button'));
+    buttons.push(document.querySelector('.card_button'));
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].hidden = showOrHide;
+    }
   }
 
   displayRandomCardOne = function () {
@@ -267,8 +275,7 @@ hideCards = function () {
     for (const card of cards) {
       card.hidden = false;
     }
-    const button = document.querySelector(`header`).querySelector(`button`)
-    button.hidden = false;
+    hideOrShowButtons(false);
   }
 
   delayActionShort = function (code) {
